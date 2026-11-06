@@ -1,0 +1,132 @@
+[
+  {
+    "symptoms": "fever headache weakness",
+    "department": "General Medicine",
+    "cleaned": "fever headache weakness"
+  },
+  {
+    "symptoms": "cough fever cold sore throat",
+    "department": "General Medicine",
+    "cleaned": "cough fever cold sore throat"
+  },
+  {
+    "symptoms": "stomach pain nausea vomiting diarrhea",
+    "department": "Gastroenterology",
+    "cleaned": "stomach pain nausea vomiting diarrhea"
+  },
+  {
+    "symptoms": "skin rash itching irritation",
+    "department": "Dermatology",
+    "cleaned": "skin skin irritation skin irritation irritation"
+  },
+  {
+    "symptoms": "joint pain knee pain swelling",
+    "department": "Orthopedics",
+    "cleaned": "joint pain knee pain swelling"
+  },
+  {
+    "symptoms": "tooth pain cavity gum pain",
+    "department": "Dentistry",
+    "cleaned": "tooth pain cavity gum pain"
+  },
+  {
+    "symptoms": "eye pain redness blurred vision",
+    "department": "Ophthalmology",
+    "cleaned": "eye pain redness blurred vision"
+  },
+  {
+    "symptoms": "ear pain hearing loss infection",
+    "department": "ENT",
+    "cleaned": "ear pain hearing loss infection"
+  },
+  {
+    "symptoms": "stomach discomfort gas indigestion",
+    "department": "Gastroenterology",
+    "cleaned": "stomach discomfort stomach pain indigestion"
+  },
+  {
+    "symptoms": "skin irritation rash itching",
+    "department": "Dermatology",
+    "cleaned": "skin irritation skin irritation skin irritation"
+  },
+  {
+    "symptoms": "back pain joint pain mobility",
+    "department": "Orthopedics",
+    "cleaned": "back pain joint pain mobility"
+  },
+  {
+    "symptoms": "cough chest pain breathing issues",
+    "department": "General Medicine",
+    "cleaned": "cough chest pain breathing issues"
+  },
+  {
+    "symptoms": "headache dizziness fever",
+    "department": "General Medicine",
+    "cleaned": "headache dizziness fever"
+  },
+  {
+    "symptoms": "eye redness watery eyes irritation",
+    "department": "Ophthalmology",
+    "cleaned": "eye redness watery eyes irritation"
+  },
+  {
+    "symptoms": "ear ache ringing hearing problem",
+    "department": "ENT",
+    "cleaned": "ear ache ringing hearing problem"
+  },
+  {
+    "symptoms": "dental pain tooth ache gum swelling",
+    "department": "Dentistry",
+    "cleaned": "dental pain tooth ache gum swelling"
+  },
+  {
+    "symptoms": "fever body pain cough",
+    "department": "General Medicine",
+    "cleaned": "fever body pain cough"
+  },
+  {
+    "symptoms": "sore throat cough fever",
+    "department": "General Medicine",
+    "cleaned": "sore throat cough fever"
+  },
+  {
+    "symptoms": "rash skin itch",
+    "department": "Dermatology",
+    "cleaned": "skin irritation skin itch"
+  },
+  {
+    "symptoms": "knee pain swelling walking pain",
+    "department": "Orthopedics",
+    "cleaned": "knee pain swelling walking pain"
+  },
+  {
+    "symptoms": "pain in stomach after food",
+    "department": "Gastroenterology",
+    "cleaned": "pain in stomach after food"
+  },
+  {
+    "symptoms": "pain in eyes blurry vision",
+    "department": "Ophthalmology",
+    "cleaned": "pain in eyes blurry vision"
+  },
+  {
+    "symptoms": "toshi vena",
+    "department": "General Medicine",
+    "cleaned": "toshi vena"
+  },
+  {
+    "symptoms": "jwaram thalai vali",
+    "department": "General Medicine",
+    "cleaned": "fever thalai vali"
+  },
+  {
+    "symptoms": "skin irritations and itching",
+    "department": "Dermatology",
+    "cleaned": "skin irritations and skin irritation"
+  },
+  {
+    "symptoms": "vaai soga",
+    "department": "Gastroenterology",
+    "cleaned": "vaai soga"
+  }
+]

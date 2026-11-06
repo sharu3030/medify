@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Find Nearby Hospitals - MediFind AI</title>
+<link href="/static/css/bootstrap.min.css" rel="stylesheet">
+<style>
+.map-card { border: 2px dashed #dee2e6; border-radius: 12px; padding: 40px 20px; text-align: center; background: #f8f9fa; }
+.hospital-list-card { border-left: 4px solid #dc3545; }
+</style>
+</head>
+<body>
+<div class="container py-4">
+  <h2 class="mb-2">Find Nearby Hospitals</h2>
+  <p class="text-muted mb-3">Enter your symptoms to get the recommended department and nearby hospitals.</p>
+
+  <div class="row g-2 mb-3">
+    <div class="col-md-5"><input id="symptoms" class="form-control" placeholder="Enter symptoms (Tamil / English / Tanglish)"></div>
+    <div class="col-md-3"><button id="btnSearch" class="btn btn-primary w-100">Search Hospitals</button></div>
+    <div class="col-md-2"><button id="btnLoc" class="btn btn-success w-100">Allow Location Access</button></div>
+    <div class="col-md-2"><button id="btnRefresh" class="btn btn-outline-secondary w-100">Refresh Location</button></div>
+  </div>
+
+  <div id="status" class="alert alert-info py-2">Status: idle</div>
+  <div id="deptBox" class="alert alert-warning d-none mb-3"></div>
+
+  <!-- Map area -->
+  <div id="mapBlock" class="mb-4" style="display:none;">
+    <div class="card map-card">
+      <div class="card-body">
+        <h5 class="mb-2">Nearby Hospitals on Google Maps</h5>
+        <p class="text-muted mb-3">Real Google Maps view of <strong id="mapDept"></strong> hospitals near your location.</p>
+        <div class="d-grid">
+          <button id="btnOpenMap" class="btn btn-primary btn-lg">Open Hospitals on Google Maps</button>
+          <p class="small text-muted mt-2">Opens the live Google Maps hospital list (names, ratings, addresses, phone) in a new tab — no API key needed.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Hospital list below map -->
+  <div id="listBlock" class="mb-4" style="display:none;">
+    <h5 class="mb-2">Recommended Department</h5>
+    <div id="deptBadge" class="badge bg-primary mb-3"></div>
+    <div class="card hospital-list-card p-3 mb-3">
+      <div class="row g-3 align-items-center">
+        <div class="col-md-8">
+          <h6 id="listDeptName" class="mb-1"></h6>
+          <p class="small text-muted mb-0" id="listDeptNote">Find hospitals matching this department nearby.</p>
+        </div>
+        <div class="col-md-4 text-end">
+          <button id="btnViewList" class="btn btn-outline-primary">View Full Hospital List</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="navBox" class="mt-4">
+    <h5>Navigate to a Hospital</h5>
+    <p class="text-muted">Open Google Maps directions to your chosen hospital.</p>
+    <div class="input-group">
+      <input id="destName" class="form-control" placeholder="Hospital name / place">
+      <button id="btnNavigate" class="btn btn-danger">Navigate on Google Maps</button>
+    </div>
+  </div>
+
+  <!-- AI Chatbot -->
+  <div id="aiBlock" class="mt-5">
+    <div class="card">
+      <div class="card-header d-flex justify-content-between align-items-center">
+        <span><strong>MediFind AI Assistant</strong></span>
+        <button id="btnToggleChat" class="btn btn-sm btn-outline-primary">Open Chat</button>
+      </div>
+      <div id="chatBox" class="card-body p-3" style="display:none; max-height:420px; overflow-y:auto; background:#f8f9fa; border-radius:8px;">
+        <div id="chatMessages" class="mb-3 small"></div>
+        <div class="input-group">
+          <input id="chatInput" class="form-control form-control-sm" placeholder="Type your question (English / Tamil / Tanglish)...">
+          <button id="btnSend" class="btn btn-sm btn-primary">Send</button>
+        </div>
+        <div class="mt-2 small text-muted">AI guidance is not a medical diagnosis. Consult a doctor for serious concerns.</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="/static/js/find_hospitals.js"></script>
+</body>
+</html>
